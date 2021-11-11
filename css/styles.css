@@ -14,7 +14,12 @@
 
 }
 body{
-    font-family:"Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-style: normal | italic
+    font-weight: bold | 500 | 900 | 700;
+    font-size: 14px, 16px, 18px, 26px, 36px, 44px;
+    letter-spacing: 0.02em, 0.03em, 0.06em;
+    background-color: var(--title-background-color), var(--header-background-color), var(--footer-background-color), var(--main-background-color)
 }
     .list {
     list-style: none;
@@ -40,12 +45,20 @@ body{
     .title{
         color: var(--title-color);
     }
+    .item{
+        letter-spacing: 0.02em; 
+    }
     .spacing{
         letter-spacing:0.03em;
+    }
+    .table{
+        letter-spacing: 0.06em;
     }
     .main{
         color: var(--main-title-color)
     }
+
+    
 
 /*--------HEADER*------*/
 .header-logo {
@@ -65,7 +78,6 @@ body{
 .header-list-item{
     font-weight: 500;
     line-height: 1.33;
-    letter-spacing: 0.02em;
 }
 .header-list-item:hover,
 .header-list-item:focus {
@@ -74,7 +86,6 @@ body{
 .header-tel{
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 .header-tel:hover,
 .header-tel:focus{
@@ -84,7 +95,6 @@ body{
 .header-mail {
     font-weight: 500;
     line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 .header-mail:hover,
 .header-mail:focus{
@@ -96,10 +106,9 @@ body{
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-.hero-title{
+.hero{
     background-color: var(--hero-background-color);
 }
 .main-btn {
@@ -108,7 +117,6 @@ body{
     display: flex;
     align-items: center;
     text-align: center;
-    letter-spacing: 0.06em;
 }
 .main-btn{ 
     cursor: pointer;
@@ -129,6 +137,7 @@ body{
     margin: -1px;
   }
 /*--------Quality-------*/
+}
 .quality-title{
     line-height: 1.14;
     text-transform: uppercase;
@@ -161,8 +170,7 @@ body{
 }
 /*--------------CONTACTS-------------*/
 .contacts-link-title{
-    line-height: 1.19;
-    color: var(--header-logo-color);
+    background-color: var(--footer-background-color);
 }
 .studio-title{
     line-height: 1.19;
@@ -213,7 +221,6 @@ body{
     font-weight: bold;
     font-size: 18px;
     line-height: 2.00;
-    letter-spacing: 0.06em;
 }
 .portfolio-text{
     font-weight: normal;
