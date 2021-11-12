@@ -1,8 +1,10 @@
 :root {
     --header-logo-color: #2196F3;
+    --footer-logo-color: rgba(0, 0, 0, 0.25);
     --header-studio-color: #000000;
     --main-title-color: #FFFFFF;
     --first-text-color: rgba(255, 255, 255, 0.6);
+    --footer-studio-color:rgba(0, 0, 0, 0.25);
     --title-color: #212121;
     --text-color: #757575;
     --accent-color: #2196F3;
@@ -15,11 +17,9 @@
 }
 body{
     font-family: "Roboto", sans-serif;
-    font-style: normal | italic
-    font-weight: bold | 500 | 900 | 700;
-    font-size: 14px, 16px, 18px, 26px, 36px, 44px;
-    letter-spacing: 0.02em, 0.03em, 0.06em;
-    background-color: var(--title-background-color), var(--header-background-color), var(--footer-background-color), var(--main-background-color)
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    background-color: var(--header-background-color);
 }
     .list {
     list-style: none;
@@ -36,9 +36,6 @@ body{
     .link {
         font-size: 16px;
     }
-    .alert{
-        font-size: 14px;
-    }
     .success{
         color: var(--text-color);
     }
@@ -48,9 +45,6 @@ body{
     .item{
         letter-spacing: 0.02em; 
     }
-    .spacing{
-        letter-spacing:0.03em;
-    }
     .table{
         letter-spacing: 0.06em;
     }
@@ -58,17 +52,19 @@ body{
         color: var(--main-title-color)
     }
 
-    
-
 /*--------HEADER*------*/
-.header-logo {
-    font-family: inherit;
+.header-logo{
+    font-family:'Raleway';
+    font-weight: bold;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--header-logo-color)
 }
 .header-logo-title {
-    font-family: inherit;
+    font-family: 'Raleway';
+    font-weight: bold;
     line-height: 1.19;
+    letter-spacing: 0.03em;
     color: var(--header-studio-color)
 }
 .page-header{
@@ -77,6 +73,7 @@ body{
 
 .header-list-item{
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.33;
 }
 .header-list-item:hover,
@@ -85,6 +82,7 @@ body{
 }
 .header-tel{
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
 }
 .header-tel:hover,
@@ -94,6 +92,7 @@ body{
 
 .header-mail {
     font-weight: 500;
+    font-size: 14px;
     line-height: 1.14;
 }
 .header-mail:hover,
@@ -175,14 +174,35 @@ body{
 .studio-title{
     line-height: 1.19;
 }
+.footer-logo{
+    font-family:'Raleway';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--header-logo-color)
+    text-shadow: 0px 4px 4px var(--footer-logo-color)
+}
+.footer-logo-title{
+    font-family:'Raleway';
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color:var(--main-title-color)
+}
 .address-contacts-link{
     font-family: inherit;
     font-style: normal;
+    font-size: 14px;
+    letter-spacing:0.03em;
     line-height: 1.71;
 }
 .contacts-link{
     font-family: inherit;
     font-style: normal;
+    font-size: 14px;
+    letter-spacing:0.03em;
     line-height: 1.71;
     color: var(--first-text-color)
 }
